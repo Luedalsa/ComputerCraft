@@ -4,6 +4,6 @@
 ---
 
 local periph = require("peripherals")
-periph.register("monitor_principal", "left")
-periph.registerType("almacen", "minecraft:chest")
-local mon = periph.get("monitor_principal")
+periph.register("stock_ticker", "right")
+local stock_ticker = periph.get("stock_ticker")
+print(stock_ticker.stock())
